@@ -1,63 +1,272 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio</title>
-<style>
-body{font-family:Arial;margin:0;background:#f4f6f8}
-header{background:#1e40af;color:white;padding:40px;text-align:center}
-.container{max-width:900px;margin:auto;padding:20px}
-section{background:white;margin:20px 0;padding:20px;border-radius:10px}
-h2{color:#1e40af}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lê Văn Khánh | IT Support Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fb;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 12px 0 25px;
+      color: #dbeafe;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #1d4ed8;
+      padding: 10px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: #dbeafe;
+    }
+
+    nav {
+      background: white;
+      text-align: center;
+      padding: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      margin: 0 14px;
+      color: #1e40af;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0f172a;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: white;
+      padding: 32px;
+      margin-bottom: 28px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      margin-top: 0;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border-left: 4px solid #2563eb;
+      padding: 16px;
+      border-radius: 12px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e0ecff;
+      color: #1e3a8a;
+      padding: 9px 14px;
+      margin: 6px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+      background: #e5e7eb;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<h1>Lê Văn Khánh</h1>
-<p>IT Support</p>
+  <h1>Lê Văn Khánh</h1>
+  <p>Sinh viên Công nghệ Thông tin | Định hướng IT Support</p>
+  <a class="btn" href="https://github.com/levankhanh123" target="_blank">GitHub</a>
+  <a class="btn" href="mailto:levankhanh62521@gmail.com">Email</a>
 </header>
+
+<nav>
+  <a href="#about">Giới thiệu</a>
+  <a href="#skills">Kỹ năng</a>
+  <a href="#project">Dự án</a>
+  <a href="#certificates">Chứng chỉ</a>
+  <a href="#contact">Liên hệ</a>
+</nav>
 
 <div class="container">
 
-<section>
-<h2>Giới thiệu</h2>
-<p>Sinh viên CNTT định hướng IT Support</p>
-</section>
+  <section id="about">
+    <h2>Giới thiệu</h2>
+    <p>
+      Em là sinh viên ngành Công nghệ Thông tin, định hướng phát triển theo lĩnh vực
+      <strong>IT Support</strong>. Em quan tâm đến việc hỗ trợ người dùng, xử lý sự cố hệ thống,
+      quản lý phần mềm, phần cứng và vận hành hệ thống công nghệ thông tin trong môi trường doanh nghiệp.
+    </p>
+    <p>
+      Mục tiêu của em là tiếp tục củng cố nền tảng về hệ điều hành, mạng máy tính, cơ sở dữ liệu,
+      lập trình và các công cụ hỗ trợ kỹ thuật để có thể đáp ứng tốt các yêu cầu công việc thực tế.
+    </p>
+  </section>
 
-<section>
-<h2>Dự án</h2>
-<p><b>Image Captioning via Swin Transformer and Relational Graph Encoding with a Transformer Decoder</b></p>
-<p>Dự án AI tạo mô tả ảnh tự động.</p>
-<p>
-<a href="https://github.com/levankhanh123/chu_thich_anh_da_chinh">GitHub Project</a>
-</p>
-</section>
+  <section id="skills">
+    <h2>Kỹ năng</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>C#</span>
+      <span>ReactJS</span>
+      <span>PHP</span>
+      <span>SQL</span>
+      <span>MongoDB</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git/GitHub</span>
+      <span>Windows</span>
+      <span>Linux cơ bản</span>
+      <span>Networking cơ bản</span>
+      <span>IT Support</span>
+    </div>
+  </section>
 
-<section>
-<h2>Chứng chỉ</h2>
-<ul>
-<li>AI for Beginners</li>
-<li>IT for Business Success</li>
-<li>Cybersecurity</li>
-<li>SQL Databricks</li>
-<li>CCNA</li>
-<li>CompTIA A+</li>
-</ul>
-</section>
+  <section id="project">
+    <h2>Dự án</h2>
+    <h3>Image Captioning via Swin Transformer and Relational Graph Encoding with a Transformer Decoder</h3>
+    <p>
+      Đây là dự án xây dựng mô hình sinh mô tả tự động cho hình ảnh bằng cách kết hợp
+      <strong>Swin Transformer</strong>, <strong>Relational Graph Encoding</strong> và
+      <strong>Transformer Decoder</strong>. Hệ thống nhận đầu vào là hình ảnh, trích xuất đặc trưng
+      và tạo ra câu mô tả nội dung ảnh.
+    </p>
 
-<section>
-<h2>Kỹ năng</h2>
-<p>Python, C#, ReactJS, PHP, SQL, MongoDB, HTML, CSS, JS</p>
-</section>
+    <div class="grid">
+      <div class="card">
+        <strong>Mục tiêu dự án</strong>
+        <p>Tự động tạo mô tả nội dung cho hình ảnh dựa trên mô hình học sâu.</p>
+      </div>
+      <div class="card">
+        <strong>Công nghệ sử dụng</strong>
+        <p>Python, mô hình Transformer, dữ liệu hình ảnh, checkpoint và GitHub.</p>
+      </div>
+      <div class="card">
+        <strong>Kỹ năng rèn luyện</strong>
+        <p>Quản lý source code, xử lý lỗi môi trường, đọc log và làm việc với mô hình AI.</p>
+      </div>
+    </div>
 
-<section>
-<h2>Liên hệ</h2>
-<p>Email: levankhanh62521@gmail.com</p>
-</section>
+    <p>
+      Mặc dù định hướng chính của em là IT Support, dự án này giúp em rèn luyện nhiều kỹ năng liên quan
+      như quản lý môi trường chạy chương trình, kiểm tra thư viện, xử lý lỗi khi cài đặt và vận hành
+      source code. Đây là các kỹ năng hữu ích trong công việc hỗ trợ kỹ thuật thực tế.
+    </p>
+
+    <p>
+      <strong>Link GitHub dự án:</strong>
+      <a href="https://github.com/levankhanh123/chu_thich_anh_da_chinh" target="_blank">
+        https://github.com/levankhanh123/chu_thich_anh_da_chinh
+      </a>
+    </p>
+  </section>
+
+  <section id="certificates">
+    <h2>Chứng chỉ và khóa học</h2>
+    <div class="grid">
+      <div class="card">AI for Beginners - HP LIFE</div>
+      <div class="card">IT for Business Success - HP LIFE</div>
+      <div class="card">Sora AI for Beginners</div>
+      <div class="card">Get Started with SQL Analytics and BI on Databricks</div>
+      <div class="card">Introduction to Cybersecurity - Cisco Networking Academy</div>
+      <div class="card">Cisco Certified Network Associate (CCNA) - Udemy</div>
+      <div class="card">CompTIA A+ - Udemy</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <p><strong>Email:</strong> levankhanh62521@gmail.com</p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/levankhanh123" target="_blank">
+        https://github.com/levankhanh123
+      </a>
+    </p>
+    <p>
+      <strong>Portfolio:</strong>
+      <a href="https://levankhanh123.github.io" target="_blank">
+        https://levankhanh123.github.io
+      </a>
+    </p>
+  </section>
 
 </div>
+
+<footer>
+  © 2026 Lê Văn Khánh. Portfolio cá nhân phục vụ học tập và định hướng nghề nghiệp.
+</footer>
 
 </body>
 </html>
